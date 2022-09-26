@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent; 
+}
+
+body {
+    box-sizing: border-box;
+    background-color: ;
+    width: 100%;
+}
+/* this is my header. I want to make two sections. A login section and a navbar */
+
+header {
+    width: 100%;
+    background-color: aqua;
+}
+
+/* this is my nav bar section */
+
+header nav ul {
+    text-align: right;
+}
+
+header nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header nav li:last-of-type {
+    padding-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+}
