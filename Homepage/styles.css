@@ -10,7 +10,6 @@
 
 body {
     box-sizing: border-box;
-    background-color: ;
     width: 100%;
 }
 /* this is my header. I want to make two sections. A login section and a navbar */
@@ -39,4 +38,56 @@ header nav li:last-of-type {
 
 nav a {
     text-decoration: none;
+}
+
+/*body*/
+
+main {
+    
+}
+
+/* title area */
+
+#title {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+/*test area*/
+
+.test-container {
+    border: 1px solid black;
+    height: 700px;
+    width: 800px;
+    margin: 0 auto;
+    background-image: url(https://www.ncctinc.com/Content/img/review/multichoice.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* high scores */
+
+#high-score {
+    padding-left: 100px;
+}
+
+#high-score ul {
+
+}
+
+/* decor */
+
+.line {
+    border-bottom: .2rem solid black;
+}
+
+#title .line {
+    margin-bottom: 5%;
 }
