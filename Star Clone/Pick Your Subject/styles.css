@@ -8,10 +8,20 @@
     background: transparent; 
 }
 
+:root {
+    --white: rgb(245, 245, 245);
+    --lightred: rgb(210, 84, 74);
+    --red: rgb(205, 66, 54);
+    --lightblue: rgb(111, 129, 151);
+    --blue: rgb(28, 55, 91);
+    --tempblue: rgb(238, 241, 252);
+}
+
 body {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    background-color: var(--white);
     /* -ms-overflow-style: none;
     scrollbar-width: none; */
 }
@@ -23,13 +33,29 @@ body::-webkit-scrollbar {
 
 header {
     width: 100%;
-    background-color: aqua;
+    background-color: var(--lightblue);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/* this is my login section */
+
+.login {
+    text-align: center;
+    padding: 1%
+}
+
+.name-img {
+    height: 50px;
 }
 
 /* this is my nav bar section */
 
 header nav ul {
     text-align: right;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav li {
@@ -45,6 +71,12 @@ header nav li:last-of-type {
 
 nav a {
     text-decoration: none;
+}
+
+.topnav {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--blue)
 }
 
 /*body*/
@@ -64,6 +96,7 @@ main {
 
 .title {
     font-size: 3rem;
+    color: var(--lightred)
 }
 
 /*test area*/
@@ -77,6 +110,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    background-color: white;
 }
 
 /* high scores */
@@ -86,6 +120,7 @@ main {
     margin: 0 auto;
     text-align: center;
     padding-top: 5%;
+    margin-bottom: 10%
 }
 
 #high-score ol {
@@ -97,37 +132,51 @@ main {
 }
 
 .container {
-
+    
 }
 
 /* information */
 
-.information {
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
-    align-items: center;
+#resources {
+        background-color: var(--tempblue);
 }
 
-.copyright {
-    font-size: 1rem;
-    padding-top: 2%;
-} 
+.information {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 2%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo-img {
+    max-width: 30%;
+}
+
 
 /* footer */
 
 footer {
-    height: 100px;
     display: flex;
     align-items: flex-end;
 }
 
 .footer {
     width: 100%;
-    background-color: aqua;
+    background-color: var(--lightblue);
     height: 80%;
     text-align: center;
+    padding-bottom: 1%;;
 }
+
+.copyright {
+    font-size: 1rem;
+    padding-top: 1%;
+} 
+
 
 /* decor */
 
@@ -137,6 +186,7 @@ footer {
 
 .lightline {
     border-bottom: .1rem solid gray;
+    margin-bottom: 1%;
 }
 
 #title .line {
@@ -147,3 +197,6 @@ footer {
     font-size: 2rem;
 }
 
+.small-space {
+    margin-bottom: 7%;
+}
