@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent; 
+}
+
+:root {
+    --white: rgb(245, 245, 245);
+    --lightred: rgb(210, 84, 74);
+    --red: rgb(205, 66, 54);
+    --lightblue: rgb(111, 129, 151);
+    --blue: rgb(28, 55, 91);
+    --tempblue: rgb(238, 241, 252);
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+}
+
+/* this is my header. I want to make two sections. A login section and a navbar */
+
+header {
+    width: 100%;
+    background-color: var(--lightblue);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/* this is my login section */
+
+.login {
+    text-align: center;
+    padding: 1%
+}
+
+.name-img {
+    height: 50px;
+}
+
+/* this is my nav bar section */
+
+
+
+
+
+/* this is my form */
+
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 77vh;
+}
+
+.side-one, .side-two{
+    width: 40%;
+    border: 1px solid black;
+    text-align: center;
+    max-height: 40vh;
+}
+
+.side-one input, .side-two input {
+    border: 1px solid black;
+    text-align: center;
+    padding: .5rem;
+}
+
+.sign-in, .sign-up {
+    font-size: 2rem;
+}
+
+.login-container .lightline {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+/* information */
+
+#resources {
+        background-color: var(--tempblue);
+}
+
+.information {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 2%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo-img {
+    max-width: 30%;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--lightblue);
+    height: 80%;
+    text-align: center;
+    padding-bottom: 1%;;
+}
+
+.copyright {
+    font-size: 1rem;
+    padding-top: 1%;
+} 
+
+
+/* decor */
+
+.line {
+    border-bottom: .2rem solid black;
+}
+
+.lightline {
+    border-bottom: .1rem solid gray;
+    margin-bottom: 1%;
+}
+
+#title .line {
+    margin-bottom: 5%;
+}
+
+.small-title {
+    font-size: 2rem;
+}
+
+.small-space {
+    margin-bottom: 7%;
+}
