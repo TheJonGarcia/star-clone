@@ -15,6 +15,7 @@
     --lightblue: rgb(111, 129, 151);
     --blue: rgb(28, 55, 91);
     --tempblue: rgb(238, 241, 252);
+    --errorwhite: rgb(249, 250, 254);
 }
 
 body {
@@ -79,60 +80,23 @@ nav a {
     color: var(--blue)
 }
 
-/*body*/
+/* error message section */
 
-main {
-    
-}
-
-/* title area */
-
-#title {
-    width: 50%;
-    margin: 0 auto;
+.error {
+    width: 100vw;
+    height: 80vh;
     text-align: center;
-    padding-top: 5%;
+    font-size: 1.5rem;
+    background-color: var(--errorwhite);
 }
 
-.title {
+.errormsg {
     font-size: 3rem;
-    color: var(--lightred)
+    padding: 1vh;
 }
 
-/*test area*/
-
-.test-container {
-    border: 1px solid black;
-    height: 700px;
-    width: 800px;
-    margin: 0 auto;
-    background-image: url(https://www.ncctinc.com/Content/img/review/multichoice.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-color: white;
-}
-
-/* high scores */
-
-#high-score {
-    width: 25%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 5%;
-    margin-bottom: 10%
-}
-
-#high-score ol {
-    margin-top: 3%;
-}
-
-#high-score ol li {
-    padding: 1%;
-}
-
-.container {
-    
+.error-img{
+    padding-top: 10vh;
 }
 
 /* information */
